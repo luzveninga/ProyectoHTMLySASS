@@ -1,0 +1,48 @@
+@import './global';
+@import '../assets/variables';
+@import '../assets/mixins';
+@import './header';
+@import './footer';
+@import './components';
+@import './global';
+@import './footer';
+@import './header';
+@import '../assets/responsive';
+
+.sucursales{
+    .container{
+    h1{
+    @include styleh1;
+    color: $color-principal;
+    margin-top: 1em;
+    }
+    .midtown{
+        margin-top: 30px;
+        font-family: $font-family-general;
+        h2{
+            margin: 10px;
+            @include ffamily-fsize-color ($font-family-general, 1.3em, $color-principal);
+            }
+        }
+        h3{
+            margin-top: 20px;
+            font-family: $font-family-general;
+            font-size: 1.2em;
+            }
+        .horarios {
+            li{
+            line-height: 2em;
+            font-family: $font-family-general;
+            list-style-type: none;
+            }
+        }
+        .mapa{
+            width: auto;
+        }
+    overflow: hidden
+    }
+    
+    .galerias{
+     @extend.midtown;
+    }
+}

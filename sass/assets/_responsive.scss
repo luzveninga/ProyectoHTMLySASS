@@ -1,0 +1,110 @@
+@import './variables';
+@import '../partials/global';
+
+@media (max-width: 991px) {
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: #FFE8E5;
+        opacity: 0.95;
+    } 
+    
+    .li_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    li{
+        margin: 2px;
+        font-size: 1em;
+    }
+    .containertittle{
+        .tittle{
+            .somos{
+                line-height: 30px;
+                font-size: 20px;
+                margin-top: 20px;
+                padding: 10px;
+            }
+        }
+
+    }
+    }
+
+    
+@media (max-width: 480px) {
+    .somos{
+            line-height: 1.4em;
+            font-size: 0.9em;
+        }
+    .iglogo, .fblogo, .wplogo {
+            width: 2em;
+            height: 2em;
+    }
+} 
+        
+@media (max-width: 320px){
+    .containertittle h3{
+        font-size: 1em;
+    }
+    footer{
+        .horarios{
+            li{font-size: 10px;}
+            
+        }
+        .footer-a{
+            a{font-size: 10px;}
+        }
+        .contact{
+            p{font-size: 10px;}
+            .form-footer{   
+                input[type=submit]{font-size: 10px;}
+                [type=email]{font-size: 10px;}
+            }
+        }
+        .footer-copy{
+            p{font-size: 10px;}
+        }
+    }
+} 
+    
+@media (max-width: 280px) {
+    body{
+        .containertittle{
+        h3{
+            font-size: 0.8em;
+        }
+        .tittle{
+                .somos{
+                    p{
+                    line-height: 15px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .horarios{
+            li{font-size: 10px;}
+            
+        }
+        .footer-a{
+            a{font-size: 10px;}
+        }
+        .contact{
+            p{font-size: 10px;}
+            .form-footer{   
+                input[type=submit]{font-size: 10px;}
+                [type=email]{font-size: 10px;}
+            }
+        }
+        .footer-copy{
+            p{font-size: 10px;}
+        }
+    }
+}

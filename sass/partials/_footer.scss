@@ -1,0 +1,103 @@
+@import '../partials/global';
+@import '../assets/variables';
+@import '../assets/mixins';
+@import '../assets/responsive';
+
+
+footer {
+    width: 100%;
+    background-color: $color-principal;
+    @include ffamily-fsize-color($font-family-general, 0.9em, $f-color);
+    text-align: center;
+    padding: 40px;
+    li {
+        margin-right: 30px;
+        list-style-type: none;
+    }
+    a{
+        .footer-logo{
+            width: 8em;
+            
+        }
+    }
+    h4{
+        font-size: 1em;
+    }
+    .footer-a {
+	padding: 5px; 
+	a{
+        @include ffamily-fsize-color($font-family-general, 1em, $f-color);
+		text-decoration: none; 
+		padding: 10px; 
+	&:hover{
+		color: $color-secundario;
+		text-decoration: underline;
+        }
+    }    
+    }
+    .fblogo{
+        &:hover{
+            box-shadow: inset 0 -100px 0 0 $color-secundario;
+        }
+    }
+    .iglogo{
+        @extend.fblogo;
+    }
+    .wplogo{
+        @extend.fblogo;
+    }
+    
+}
+.footer-info{
+    padding: 1em ;
+}
+.footer-suc{
+    @extend .footer-info;
+}
+.footer-newsletter {
+    @extend .footer-info;
+    input[type=email]{
+        border: 0;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        padding: 6px 8px;
+        width: 60%;
+        height: 2em;
+        font-size: 0.96em;
+    }
+    input[type=submit]{
+        background-color: $color-principal;
+        border: 1.5px solid white;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        box-shadow: inset 0 0 0 0 $color-secundario;
+        width: 40%;
+        height: 2em;
+        text-align: center;
+        color: $f-color;
+        cursor: pointer;
+        transition: ease-out 0.3s;
+        text-transform: uppercase;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 1em;
+        letter-spacing: 1.5px;
+        &:hover{
+            color: $f-color;
+            box-shadow: inset 0 -100px 0 0 $color-secundario;    
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+
+
+}
+.footer-social{
+    @extend .footer-info;
+}
+.footer-copy{
+    @extend .footer-info;
+    margin-top: 1em;
+}
+

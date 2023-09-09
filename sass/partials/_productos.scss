@@ -1,0 +1,95 @@
+@import './global';
+@import './components';
+@import '../assets/responsive';
+@import '../assets/variables';
+@import '../assets/mixins';
+@import './footer';
+@import './header';
+
+main{
+.containerimg{
+    .imgdelicias{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/AdobeStock_293326119.jpeg);
+        background-position: center;
+        background-size: cover;
+        font-size: 30px;
+        text-align: left;
+            h1{
+            font-family:$font-family-h1;	
+            padding: 20px;
+            width: 300px;
+            height: 100%;
+            color:$color-terciario;
+            font-size: 47px;
+            text-shadow: -3px 2px 2px rgba(0,0,0,0.71);
+            }
+    }
+}
+
+.subtitulo-pr{
+margin: 30px;
+text-align: center;
+font-family: $font-family-general;
+color: $color-secundario;
+}
+}    
+.pasteles {
+	background-position:center;
+	background-size: cover ;
+	height: 15em;
+	width: 15em;
+	margin: 1em;
+	text-align: center;
+	vertical-align: end;
+    border-radius: 10px;
+    .b-pasteles{	
+		
+		display: inline-block;
+		margin-top: 10px;
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 15px;
+		letter-spacing: 1px;
+		text-decoration: none;
+		color: $color-secundario;
+		background: $f-color;
+        cursor: pointer;
+        transition: ease-out 0.3s;
+        border: 2px solid $color-secundario;
+        border-radius: 10px;
+        box-shadow: inset 0 0 0 0 $color-secundario;
+        &:hover{
+            color: $f-color;
+            box-shadow: inset 0 -100px 0 0 $color-secundario;
+            transform: scale(0.9);    
+        }	 
+    }
+        &active{
+            transform: scale(0.9);}
+    }
+
+.pasteles{
+	background-image: url(https://www.marisa.mx/cdn/shop/files/pastel-moka-grande-02_1800x1800_145aa5be-4d36-40ea-b5d8-fc166bc062b2_720x.jpg?v=1635008229);
+}
+.galletas{
+    @extend.pasteles;
+    background-image: url(https://www.marisa.mx/cdn/shop/files/galletas-centenario-04_f96c399e-d65e-47dd-8310-86e7e86768c9_400x.jpg?v=1635007505);
+} 
+.pays{@extend.pasteles;
+    background-image: url(https://www.marisa.mx/cdn/shop/products/pay-de-queso-con-moras-03_400x.jpg?v=1651083319);
+}
+.alfajores{@extend.pasteles;
+    background-image: url(https://clarin.com/img//2020/06/04/ZP5k4BWuR_340x340__1.jpg);
+}
+.macarron{@extend.pasteles;
+    background-image: url(https://www.marisa.mx/cdn/shop/products/Macarrones_360x.png?v=1651696945);
+}
+.muffins{@extend.pasteles;
+    background-image: url(https://www.marisa.mx/cdn/shop/products/muffin-chocolate_400x.jpg?v=1651696616);
+}
+
+
+
+	

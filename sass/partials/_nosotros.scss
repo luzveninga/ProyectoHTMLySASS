@@ -1,0 +1,46 @@
+@import './global';
+@import '../assets/variables';
+@import '../assets/mixins';
+@import './header';
+@import './footer';
+@import './components';
+@import '../assets/responsive';
+
+.nosotros-titulo{
+    h1{
+    @include styleh1;
+	color: $color-principal;
+	margin-top: 60px;
+    }
+
+    .about{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: 17px;
+        margin-top: 20px;
+        padding: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .valores{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        overflow: hidden;
+        .articulo{
+        height: 250px;
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        padding: 20px;
+        text-align: center;
+        font-size: large;
+        font-family: $font-family-general;
+        h3{
+        margin: 10px;
+        font-size:25px;
+        color:$color-principal;
+        }
+        }
+    }
+}

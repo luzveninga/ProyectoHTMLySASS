@@ -1,0 +1,19 @@
+@import '../assets/variables';
+
+@mixin styleh1{
+    font-family: $font-family-h1 ;
+    font-size: $size-h1;
+    text-align: center;
+}
+
+@mixin ffamily-fsize-color ($font-family, $font-size, $color){
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $width;
+
+}
